@@ -6,12 +6,28 @@
         <title>Home</title>
         <link rel="stylesheet" href="style.css"><!-- Permite a conexao com o css-->
     </head>
+    <style>
+       .carousel {
+        margin-top: 5%;
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .carousel-inner {
+      display: 100px;
+    }
+    .carousel-item {
+      display: none;
+      flex-shrink: 0;
+      width: 25%;
+    }
+    .carousel-item.active {
+      display: block;
+    } 
+    </style>
     <body background-collor="black">
-        <div id="cabecalho"><!-- ceiar secoes e divisoes de acordo com o css-->
+        <div id="cabecalho"><!-- criar secoes e divisoes de acordo com o css-->
             Home
-        </div>
-        <div id="menu">
-            adadadadadad
         </div>
         <nav>
             <a href="">Ínicio</a>
@@ -19,6 +35,20 @@
             <a href="">Salvos</a>
             <a href="">Conta</a>
         </nav>
+
+        <div class="carousel" id="carousel7">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagem 1.webp" alt="imagem1 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem 2.jpg" alt="imagem 2">
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveslide(-1, 'carousel7')"></button>
+        <button class="next" onclick="moveslide(1, 'carousel7')"></button>
+        <script src="script.js"></script>
         <div id="rodape"></div>
     </body>
 </html>

@@ -45,3 +45,43 @@ nav a:hover {
         padding: 1.5px 3px; /* Adiciona um pouco de padding */
         border-radius: 10px; /* Arredonda os cantos */
     };
+.carousel {
+    margin-left: 15%;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carousel-inner {
+    display: flex;
+    transition:  transform 0.5 ease;
+}
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5 ease;
+}
+.carousel-item img {
+    max-width: 50%;
+    display: block;
+}
+button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
